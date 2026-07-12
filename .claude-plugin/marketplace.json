@@ -1,0 +1,23 @@
+{
+  "name": "codex-mcp",
+  "description": "Claude Code plugins for consulting OpenAI Codex models",
+  "owner": {
+    "name": "Taiyu Higa"
+  },
+  "plugins": [
+    {
+      "name": "codex-mcp",
+      "source": "./",
+      "description": "Use OpenAI Codex models as a read-only architect and reviewer from Claude Code",
+      "version": "0.1.0",
+      "author": {
+        "name": "Taiyu Higa"
+      },
+      "homepage": "https://github.com/sam-mountainman/codex-mcp",
+      "repository": "https://github.com/sam-mountainman/codex-mcp",
+      "license": "MIT",
+      "keywords": ["claude-code", "codex", "gpt-5.6", "mcp", "planning", "review"],
+      "category": "Developer Tools"
+    }
+  ]
+}

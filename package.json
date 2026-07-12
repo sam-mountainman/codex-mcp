@@ -1,0 +1,34 @@
+{
+  "name": "codex-mcp",
+  "version": "0.1.0",
+  "description": "Claude Code plugin and MCP server for consulting OpenAI Codex models as a read-only architect and reviewer",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sam-mountainman/codex-mcp.git"
+  },
+  "homepage": "https://github.com/sam-mountainman/codex-mcp#readme",
+  "type": "module",
+  "main": "server.mjs",
+  "bin": {
+    "codex-mcp": "./server.mjs"
+  },
+  "scripts": {
+    "build": "esbuild server.mjs --bundle --platform=node --format=esm --outfile=dist/server.bundled.mjs",
+    "check": "node --check server.mjs && node --check scripts/setup.mjs && node --check scripts/mcp-smoke.mjs && node --check scripts/live-smoke.mjs",
+    "test": "node --test",
+    "smoke": "node scripts/mcp-smoke.mjs",
+    "live-smoke": "node scripts/live-smoke.mjs",
+    "verify": "npm run check && npm test && npm run build && npm run smoke"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.0"
+  },
+  "license": "MIT"
+}

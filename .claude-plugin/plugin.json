@@ -1,0 +1,19 @@
+{
+  "name": "codex-mcp",
+  "version": "0.1.0",
+  "description": "Consult GPT/Codex models from Claude Code for planning, deep reasoning, continuation, and read-only code review.",
+  "author": {
+    "name": "Taiyu Higa"
+  },
+  "homepage": "https://github.com/sam-mountainman/codex-mcp",
+  "repository": "https://github.com/sam-mountainman/codex-mcp",
+  "license": "MIT",
+  "keywords": [
+    "claude-code",
+    "codex",
+    "gpt-5.6",
+    "mcp",
+    "planning",
+    "review"
+  ]
+}
