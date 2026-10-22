@@ -21,7 +21,7 @@
     "verify": "npm run check && npm test && npm run build && npm run smoke"
   },
   "engines": {
-    "node": ">=18"
+    "node": ">=22"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.12.0",
